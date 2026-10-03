@@ -1,11 +1,5 @@
 # Mogili Security
 
-Official website for Mogili Security — independent security research and responsible vulnerability disclosure.
+Independent security research website for GitHub Pages.
 
-## Contact
-
-researcher@mogilisecurity.in
-
-## Deployment
-
-This site is designed for GitHub Pages and a custom domain.
+Includes a Mac-inspired minimal black-and-white design and a `.well-known/security.txt` contact file.

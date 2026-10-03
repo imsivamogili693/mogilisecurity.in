@@ -1,10 +1,10 @@
-# Mogili Security — macOS Terminal Style
+# Mogili Security — Minimal Website
+
+A clean, minimal independent security researcher website for GitHub Pages.
 
 Files:
 - index.html
 - style.css
-- script.js
 - assets/favicon.svg
 
-Upload these files to the root of the `main` branch of the GitHub Pages repository.
-The `.well-known/security.txt` can be added separately if desired.
+The design intentionally removes the previous macOS/browser/terminal-window framing while keeping a subtle security-research identity and green accent.

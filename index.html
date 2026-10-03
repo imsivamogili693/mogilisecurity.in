@@ -1,262 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mogili Security — Independent security research and responsible vulnerability disclosure.">
-  <meta name="theme-color" content="#050505">
-  <title>Mogili Security — Independent Security Research</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d0c">
+  <meta name="description" content="Mogili Security — independent security research, vulnerability discovery and responsible disclosure.">
+  <title>Mogili Security — Independent Security Researcher</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="noise"></div>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Mogili Security home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="brand-name">MOGILI <b>SECURITY</b></span>
+      </a>
 
-  <div class="site-shell">
-
-    <!-- macOS-style browser chrome -->
-    <header class="browser-bar">
-      <div class="traffic-lights" aria-hidden="true">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
-      </div>
-
-      <div class="browser-controls" aria-hidden="true">
-        <span>‹</span>
-        <span>›</span>
-      </div>
-
-      <div class="address-bar">
-        <span class="lock">⌑</span>
-        <span>mogilisecurity.in</span>
-      </div>
-
-      <div class="browser-actions" aria-hidden="true">
-        <span>☆</span>
-        <span>＋</span>
-        <span>□</span>
-      </div>
-    </header>
-
-    <nav class="navbar">
-      <a href="#top" class="logo">MOGILI<span>SECURITY</span><b>_</b></a>
-
-      <div class="nav-links">
+      <nav aria-label="Primary navigation">
         <a class="active" href="#top">Home</a>
         <a href="#research">Research</a>
         <a href="#disclosure">Disclosure</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </div>
-
-      <button class="terminal-button" id="terminalToggle" aria-label="Open terminal">›_</button>
-    </nav>
-
-    <main id="top">
-
-      <!-- HERO -->
-      <section class="hero section-pad">
-        <div class="hero-copy">
-          <div class="status-line">
-            <span class="status-dot"></span>
-            INDEPENDENT SECURITY RESEARCHER
-          </div>
-
-          <h1>
-            Finding vulnerabilities.<br>
-            <em>Reporting them responsibly.</em>
-          </h1>
-
-          <p>
-            Mogili Security is an independent security research identity focused on
-            discovering and responsibly disclosing security vulnerabilities to affected companies.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#disclosure" class="btn btn-primary">Vulnerability Disclosure <span>→</span></a>
-            <a href="mailto:researcher@mogilisecurity.in" class="btn btn-outline">Contact via Email</a>
-          </div>
-        </div>
-
-        <!-- TERMINAL -->
-        <div class="terminal-window">
-          <div class="terminal-head">
-            <div class="traffic-lights">
-              <span class="red"></span><span class="yellow"></span><span class="green"></span>
-            </div>
-            <div class="terminal-tab">mogili@research: ~</div>
-            <span class="terminal-x">×</span>
-            <span class="terminal-plus">＋</span>
-          </div>
-
-          <div class="terminal-body" id="terminalBody">
-            <div>Last login: Wed Sep 17 10:42:21 on ttys000</div>
-            <div class="prompt"><span>mogili@research</span>:~$ whoami</div>
-            <div>Independent Security Researcher</div>
-            <div class="prompt"><span>mogili@research</span>:~$ cat mission.txt</div>
-            <div class="output">&gt; Find vulnerabilities</div>
-            <div class="output">&gt; Report them responsibly</div>
-            <div class="output">&gt; Help companies be more secure</div>
-            <div class="output">&gt; Make the internet safer</div>
-            <div class="prompt"><span>mogili@research</span>:~$ <span class="cursor"></span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRINCIPLES -->
-      <section class="principles-grid container">
-        <article class="glass-card principle-card">
-          <div class="icon shield">⌾</div>
-          <div><small>01</small><h3>Responsible disclosure</h3><p>Clear, private and professional reporting.</p></div>
-        </article>
-        <article class="glass-card principle-card">
-          <div class="icon code">&lt;/&gt;</div>
-          <div><small>02</small><h3>Minimal-impact testing</h3><p>Focus on validation with the least possible impact.</p></div>
-        </article>
-        <article class="glass-card principle-card">
-          <div class="icon document">▤</div>
-          <div><small>03</small><h3>Clear technical reporting</h3><p>Detailed steps, evidence and practical remediation.</p></div>
-        </article>
-      </section>
-
-      <!-- RESEARCH -->
-      <section id="research" class="research container section">
-        <div class="section-title">
-          <div class="status-line"><span class="status-dot"></span>01 / RESEARCH</div>
-          <h2>Security research<br>with a practical focus.</h2>
-          <p>
-            Research areas include web application security, APIs, access control,
-            authentication, exposed infrastructure and other vulnerabilities discovered
-            during authorized security research.
-          </p>
-          <a class="small-button" href="#contact">View Research Areas <span>→</span></a>
-        </div>
-
-        <div class="research-cards">
-          <article class="research-card glass-card">
-            <span class="card-icon">◎</span>
-            <div><h3>Web Applications</h3><p>OWASP Top 10, logic flaws, misconfigurations</p></div>
-          </article>
-          <article class="research-card glass-card">
-            <span class="card-icon">◇</span>
-            <div><h3>API Security</h3><p>Access control, authentication, data exposure</p></div>
-          </article>
-          <article class="research-card glass-card">
-            <span class="card-icon">♙</span>
-            <div><h3>Access Control</h3><p>IDOR, BOLA, privilege escalation</p></div>
-          </article>
-          <article class="research-card glass-card">
-            <span class="card-icon">○</span>
-            <div><h3>Authentication</h3><p>Session management, account security, MFA</p></div>
-          </article>
-          <article class="research-card glass-card">
-            <span class="card-icon">▤</span>
-            <div><h3>Exposed Infrastructure</h3><p>Open services, sensitive data, misconfigurations</p></div>
-          </article>
-          <article class="research-card glass-card">
-            <span class="card-icon">⌕</span>
-            <div><h3>Vulnerability Research</h3><p>New issues, security analysis, responsible disclosure</p></div>
-          </article>
-        </div>
-      </section>
-
-      <!-- DISCLOSURE / AUDIT / SUPPORT -->
-      <section class="three-column container">
-
-        <article id="disclosure" class="large-card glass-card">
-          <div class="card-label"><span class="status-dot"></span>02 / DISCLOSURE</div>
-          <h2>Found a<br>vulnerability?</h2>
-          <p>
-            Security teams can contact Mogili Security for vulnerability reports,
-            clarification and coordinated disclosure.
-          </p>
-          <a class="email-pill" href="mailto:researcher@mogilisecurity.in">
-            <span>✉</span> researcher@mogilisecurity.in <b>⧉</b>
-          </a>
-        </article>
-
-        <article id="contact" class="large-card glass-card">
-          <div class="card-label"><span class="status-dot"></span>03 / SECURITY AUDIT</div>
-          <h2>Need a<br>security audit?</h2>
-          <p>
-            If you are a company or organization and want to discuss an authorized
-            security audit or collaboration, feel free to reach out.
-          </p>
-          <a class="email-pill" href="mailto:researcher@mogilisecurity.in?subject=Security%20Audit%20Inquiry">
-            <span>✉</span> researcher@mogilisecurity.in <b>⧉</b>
-          </a>
-        </article>
-
-        <article id="support" class="large-card glass-card">
-          <div class="card-label"><span class="status-dot"></span>04 / SUPPORT</div>
-          <h2>Appreciate<br>the work?</h2>
-          <p>
-            Finding and reporting vulnerabilities takes significant time and effort.
-            If my reports help you or your company, you can send a one-time monetary
-            reward as a token of gratitude.
-          </p>
-          <a class="email-pill" href="mailto:mlsrkrishna5@gmail.com">
-            <span class="paypal">P</span> PayPal: mlsrkrishna5@gmail.com <b>⧉</b>
-          </a>
-        </article>
-
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="about container section">
-        <div class="section-title">
-          <div class="status-line"><span class="status-dot"></span>05 / ABOUT</div>
-          <h2>Independent.<br>Technical.<br>Responsible.</h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            Mogili Security represents independent security research conducted with an
-            emphasis on responsible disclosure and respectful collaboration with affected organizations.
-          </p>
-          <p>
-            When a security issue is identified, the objective is to provide enough evidence
-            for the organization to understand, reproduce and remediate the issue without unnecessary impact.
-          </p>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="footer container">
-      <span>© 2026 Mogili Security</span>
-      <span>Independent Security Research</span>
-      <div><a href="#top">Home</a><a href="#research">Research</a><a href="#disclosure">Disclosure</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-      <button id="footerTerminal">›_</button>
-    </footer>
-
-  </div>
-
-  <!-- Floating terminal -->
-  <div class="terminal-overlay" id="terminalOverlay" aria-hidden="true">
-    <div class="floating-terminal">
-      <div class="terminal-head">
-        <div class="traffic-lights"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
-        <div class="terminal-tab">mogili@research: ~</div>
-        <button id="terminalClose">×</button>
-      </div>
-      <div class="terminal-body">
-        <div><span class="prompt-green">mogili@research</span>:~$ help</div>
-        <div>research — independent security research</div>
-        <div>disclosure — vulnerability reporting</div>
-        <div>contact — researcher@mogilisecurity.in</div>
-        <div><span class="prompt-green">mogili@research</span>:~$ <span class="cursor"></span></div>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
-<script src="script.js"></script>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> INDEPENDENT SECURITY RESEARCHER</p>
+        <h1>Finding weaknesses.<br><em>Helping make systems safer.</em></h1>
+        <p class="hero-text">
+          Mogili Security is an independent security research identity focused on
+          discovering security vulnerabilities and responsibly reporting them to
+          the organizations that can fix them.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="#disclosure">View disclosure process</a>
+          <a class="button button-secondary" href="mailto:researcher@mogilisecurity.in">Contact me</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Research principles">
+        <div class="card-top">
+          <span>RESEARCH PRINCIPLES</span>
+          <span class="status"><i></i> ACTIVE</span>
+        </div>
+        <div class="principle">
+          <strong>01</strong>
+          <div><b>Discover</b><span>Identify meaningful security weaknesses through authorized research.</span></div>
+        </div>
+        <div class="principle">
+          <strong>02</strong>
+          <div><b>Validate</b><span>Confirm impact with the smallest practical amount of testing.</span></div>
+        </div>
+        <div class="principle">
+          <strong>03</strong>
+          <div><b>Disclose</b><span>Provide clear evidence, impact and remediation guidance privately.</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span>01</span><b>Responsible disclosure</b><small>Private, professional communication</small></div>
+        <div><span>02</span><b>Minimal-impact testing</b><small>Validate without unnecessary disruption</small></div>
+        <div><span>03</span><b>Technical clarity</b><small>Reproducible evidence and remediation</small></div>
+      </div>
+    </section>
+
+    <section id="research" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> RESEARCH</p>
+        <h2>Security research with a practical focus.</h2>
+        <p>Research is centered on real-world application and infrastructure security, with emphasis on vulnerabilities that can create meaningful impact.</p>
+      </div>
+
+      <div class="research-grid">
+        <article><span>01</span><h3>Web Applications</h3><p>Access control, authentication, injection, business logic and other application-layer weaknesses.</p></article>
+        <article><span>02</span><h3>API Security</h3><p>Authorization boundaries, object-level access, authentication flows and exposed API functionality.</p></article>
+        <article><span>03</span><h3>Infrastructure</h3><p>Internet-facing services, exposed management interfaces, configuration issues and attack surface discovery.</p></article>
+        <article><span>04</span><h3>Vulnerability Research</h3><p>Security behavior, version-specific weaknesses and technical analysis of vulnerable components.</p></article>
+      </div>
+    </section>
+
+    <section id="disclosure" class="section section-dark">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow"><span></span> RESPONSIBLE DISCLOSURE</p>
+          <h2>Clear findings. Useful reports. Responsible communication.</h2>
+        </div>
+        <div class="process">
+          <div><b>01 / Verify</b><p>Reproduce the issue and establish a credible security impact.</p></div>
+          <div><b>02 / Document</b><p>Prepare affected scope, steps, evidence, impact and recommended remediation.</p></div>
+          <div><b>03 / Report</b><p>Contact the affected organization privately and allow reasonable time for response and remediation.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="about-box">
+        <div>
+          <p class="eyebrow"><span></span> ABOUT MOGILI SECURITY</p>
+          <h2>Independent research, without unnecessary noise.</h2>
+        </div>
+        <p>
+          Mogili Security represents independent security research performed with an emphasis on
+          authorization, responsible disclosure and practical impact. The goal is simple:
+          find security problems, communicate them clearly, and help organizations improve their defenses.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow"><span></span> SECURITY CONTACT</p>
+          <h2>Found a security issue or need an assessment?</h2>
+          <p>For vulnerability reports, security research collaboration or authorized security audit enquiries, contact:</p>
+          <a class="email" href="mailto:researcher@mogilisecurity.in">researcher@mogilisecurity.in</a>
+        </div>
+        <div class="contact-note">
+          <b>Research support</b>
+          <p>If a responsible disclosure provides meaningful value to your organization, a voluntary one-time reward may be offered as a token of appreciation. It is not a requirement for receiving or reporting a finding.</p>
+          <span>PayPal: mlsrkrishna5@gmail.com</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© 2026 Mogili Security</span>
+    <span>Independent Security Research</span>
+    <a href="mailto:researcher@mogilisecurity.in">researcher@mogilisecurity.in</a>
+  </footer>
 </body>
 </html>
